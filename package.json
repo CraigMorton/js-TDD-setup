@@ -1,0 +1,20 @@
+{
+  "name": "js-tdd-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "life.js",
+  "scripts": {
+    "test": "mocha specs --recursive --compilers js:babel-core/register",
+    "lint": "eslint src/**/*.js && eslint specs/**/*.js",
+    "verify": "npm run lint && npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.12.2",
+    "mocha": "^3.2.0"
+  }
+}
