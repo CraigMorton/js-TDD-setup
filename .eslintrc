@@ -1,33 +1,33 @@
 {
-    "rules": {
-        "indent": [
-            2,
-            2
-        ],
-        "quotes": [
-            2,
-            "single"
-        ],
-        "linebreak-style": [
-            2,
-            "unix"
-        ],
-        "semi": [
-            2,
-            "never"
-        ]
-    },
-    "env": {
-        "es6": true,
-        "mocha": true
-    },
-    "extends": "eslint:recommended",
+  "rules": {
+    "indent": [2, 2],
+    "quotes": [2, "single", "avoid-escape"],
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "never"],
+    "no-unexpected-multiline": [2],
+    "eqeqeq": [2, "smart"],
+    "no-unreachable": 2,
+    "no-console": [2, {"allow": ["error"]} ],
+    "no-unused-expressions": [2, {"allowShortCircuit": true}],
+    "react/react-in-jsx-scope": 2,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "comma-dangle": [2, "always-multiline"]
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
     "ecmaFeatures": {
-        "experimentalObjectRestSpread": true,
-        "modules": true
+      "jsx": true,
+      "experimentalObjectRestSpread": true
     },
-    "parserOptions": {
-        "sourceType": "module",
-    },
-    "plugins": []
+    "modules": true,
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "plugins": ["react"]
 }
